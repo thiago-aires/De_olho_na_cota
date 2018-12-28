@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_estados"
+        android:icon="@drawable/ic_location"
+        android:title="@string/title_estados" />
+
+    <item
+        android:id="@+id/navigation_deputados"
+        android:icon="@drawable/group_person"
+        android:title="@string/title_deputados" />
+
+
+    <item
+        android:id="@+id/navigation_sobre"
+        android:icon="@drawable/ic_about"
+        android:title="@string/title_sobre" />
+
+</menu>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">De Olho na Cota</string>
+    <string name="splash_screen">O app de fiscalização dos gastos com a Cota para o Exercício da Atividade Parlamentar - CEAP</string>
+    <string name="apresentacao">Trabalho de Conclusão de Curso - Aplicativo De Olho na Cota! Ferramenta de acesso aos dados da Cota para o Exercício da Atividade Parlamentar - CEAP\n\n\n\nDesenvolvido por Thiago Aires\nalmeida.thiago@live.com\n\nOrientação Profº Danilo Medeiros Eler</string>
+    <string name="title_deputados">Deputados</string>
+    <string name="title_estados">Estados</string>
+    <string name="title_sobre">Sobre</string>
+    <string name="detalhesDeputado">Detalhes</string>
+    <string name="visualizacoes">Gráficos</string>
+    <string name="analise">Análise</string>
+    <string name="mensal">Mensal</string>
+    <string name="anual">Anual</string>
+    <string name="pin">Comparar</string>
+    <string name="title_activity_visualization_just_webview">Visualization_just_webview</string>
+    <string name="total">O gasto total do Deputado  %1$s\n foi de %2$s</string>
+    <string name="sm">Esse valor é equivalente a \n %1$s salários mínimos, cujo valor em 2018\n é de R$954"</string>
+    <string name="bf">Esse valor também é equivalente a \n %1$s benefícios básicos do Bolsa Família,\ncujo valor em 2018 é de R$89"</string>
+    <string name="gas">O gasto com combustível do deputado\nfoi no valor total de %1$s,\nequivalente a %2$s Litros\nde gasolina, usando o valor médio de 2018 R$4,62"</string>
+    <string name="transporte">A media do gasto Mensal com Transporte é %1$s</string>
+    <string name="alimentacao">A media do gasto Mensal com Alimentação é %1$s</string>
+    <string name="manutencao">A media do gasto Mensal com Manutenção de Escritório é %1$s</string>
+    <string name="assinatura">A media do gasto Mensal com Assinatura de publicação  é %1$s</string>
+    <string name="apoio">A media do gasto Mensal com Apoio de Atividade Parlamentar é %1$s</string>
+    <string name="telefonia">A media do gasto Mensal com Telefonia é %1$s</string>
+    <string name="postal">A media do gasto Mensal com Serviço Postal é %1$s</string>
+    <string name="hospedagem">A media do gasto Mensal com Hospedagem é %1$s</string>
+    <string name="seguranca">A media do gasto Mensal com Serviços de Segurança é %1$s</string>
+    <string name="cursos">A media do gasto Mensal com Participação em cursos / eventos é %1$s</string>
+    <string name="moradia">A media do gasto Mensal com Auxílio Moradia é %1$s</string>
+</resources>

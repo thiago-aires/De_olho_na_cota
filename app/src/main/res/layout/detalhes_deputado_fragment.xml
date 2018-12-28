@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:background="@drawable/backtagpol">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/cardTransparente"
+                app:cardCornerRadius="12dp">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/imgDeputado"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        fresco:actualImageScaleType="2:3"
+                        fresco:backgroundImage="@color/blue"
+                        fresco:fadeDuration="300"
+                        fresco:failureImage="@drawable/error"
+                        fresco:failureImageScaleType="2:3"
+                        fresco:overlayImage="@drawable/watermark"
+                        fresco:placeholderImage="@color/wait_color"
+                        fresco:placeholderImageScaleType="2:3"
+                        fresco:pressedStateOverlayImage="@color/red"
+                        fresco:progressBarAutoRotateInterval="1000"
+                        fresco:progressBarImage="@drawable/progress_bar"
+                        fresco:progressBarImageScaleType="centerInside"
+                        fresco:retryImage="@drawable/retrying"
+                        fresco:retryImageScaleType="2:3"
+                        fresco:roundAsCircle="true"
+                        fresco:roundBottomLeft="false"
+                        fresco:roundBottomRight="true"
+                        fresco:roundTopLeft="true"
+                        fresco:roundTopRight="false"
+                        fresco:roundWithOverlayColor="@color/corner_color"
+                        fresco:roundedCornerRadius="12dp"
+                        fresco:roundingBorderColor="@color/border_color"
+                        fresco:roundingBorderWidth="2dp" />
+
+                    <TextView
+                        android:id="@+id/partidoDeputado"
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif"
+                        android:shadowColor="@color/cardview_light_background"
+                        android:text="Partido"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="14sp"
+                        android:textStyle="normal|bold"
+                        android:theme="@style/Base.DialogWindowTitle.AppCompat"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:autoSizeTextType="uniform"/>
+
+                    <TextView
+                        android:id="@+id/nomeDeputado"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif"
+                        android:shadowColor="@android:color/background_dark"
+                        android:text="Nome Deputado"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimaryText"                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/partidoDeputado"
+                        android:autoSizeTextType="uniform"/>
+
+                    <TextView
+                        android:id="@+id/cpfDeputado"
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif"
+                        android:shadowColor="@android:color/background_dark"
+                        android:text="CPF Deputado"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/nomeDeputado"
+                        android:autoSizeTextType="uniform"/>
+
+                    <TextView
+                        android:id="@+id/dataNascimentoDeputado"
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif"
+                        android:shadowColor="@android:color/background_dark"
+                        android:text="Data Nascimento Deputado"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cpfDeputado" />
+
+                    <TextView
+                        android:id="@+id/ufNascimentoDeputado"
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif"
+                        android:shadowColor="@android:color/background_dark"
+                        android:text="UF Nascimento"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/municipioNascimentoDeputado" />
+
+                    <TextView
+                        android:id="@+id/municipioNascimentoDeputado"
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif"
+                        android:shadowColor="@android:color/background_dark"
+                        android:text="Município Nascimento"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/dataNascimentoDeputado" />
+
+                    <TextView
+                        android:id="@+id/escolaridadeDeputado"
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif"
+                        android:shadowColor="@android:color/background_dark"
+                        android:text="Escolaridade"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ufNascimentoDeputado" />
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/cardTransparente"
+                app:cardCornerRadius="12dp">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/siteDeputado"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif"
+                        android:shadowColor="@android:color/background_dark"
+                        android:text="Site"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/redeSocialDeputado"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif"
+                        android:shadowColor="@android:color/background_dark"
+                        android:text="Rede social"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/siteDeputado" />
+
+                    <TextView
+                        android:id="@+id/telefoneGabinete"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif"
+                        android:shadowColor="@android:color/background_dark"
+                        android:text="Telefone Gabinete"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/emailGabinete" />
+
+                    <TextView
+                        android:id="@+id/emailGabinete"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif"
+                        android:shadowColor="@android:color/background_dark"
+                        android:text="Email"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/redeSocialDeputado" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:elevation="8dp"
+                android:fadeScrollbars="false"
+                android:scrollbars="vertical"
+                app:cardBackgroundColor="@color/cardTransparente"
+                app:cardCornerRadius="12dp">
+
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/condicaoEleitoral"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif"
+                        android:shadowColor="@android:color/background_dark"
+                        android:text="Condição Eleitoral"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/estadoDeputado" />
+
+                    <TextView
+                        android:id="@+id/estadoDeputado"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif"
+                        android:shadowColor="@android:color/background_dark"
+                        android:text="Estado"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/situacaoDeputado"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif"
+                        android:shadowColor="@android:color/background_dark"
+                        android:text="Situação"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/condicaoEleitoral" />
+
+                    <TextView
+                        android:id="@+id/descricaoStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif"
+                        android:shadowColor="@android:color/background_dark"
+                        android:text="Descrição"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/situacaoDeputado" />
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:layout_margin="4dp"
+    android:animateLayoutChanges="true"
+    app:cardBackgroundColor="@color/cardTransparente"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <!-- card 1 #b2ebf2  card 2 #4dd0e1 card 3 #006064  -->
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/estado"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            fresco:backgroundImage="@color/blue"
+            fresco:fadeDuration="300"
+            fresco:failureImage="@drawable/error"
+            fresco:overlayImage="@drawable/watermark"
+            fresco:placeholderImage="@color/wait_color"
+            fresco:pressedStateOverlayImage="@color/red"
+            fresco:progressBarAutoRotateInterval="1000"
+            fresco:progressBarImage="@drawable/progress_bar"
+            fresco:progressBarImageScaleType="centerInside"
+            fresco:retryImage="@drawable/retrying"
+            fresco:roundAsCircle="false"
+            fresco:roundBottomLeft="false"
+            fresco:roundBottomRight="true"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="false"
+            fresco:roundWithOverlayColor="@color/corner_color"
+            fresco:roundingBorderColor="@color/border_color"
+            fresco:roundingBorderWidth="2dp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/cardTransparente"
+            android:gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/nomeEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"
+            android:backgroundTint="@color/colorPrimaryText"
+            android:elegantTextHeight="true"
+            android:fontFamily="@font/rubik_light"
+            android:shadowColor="@color/colorPrimaryText"
+            android:text="Nome Estado"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryText"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="@+id/view2" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_margin="8dp"
+        android:layout_gravity="end"
+        app:cardBackgroundColor="@color/cardTransparente"
+        app:cardCornerRadius="8dp">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/s">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:fresco="http://schemas.android.com/tools"
+                android:id="@+id/cardView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:animateLayoutChanges="true"
+                android:clickable="true"
+                app:cardBackgroundColor="@color/cardTransparente"
+                app:cardCornerRadius="100dp"
+                app:cardElevation="4dp"
+                app:layout_constraintDimensionRatio="2:3">
+
+                <!-- card 1 #b2ebf2  card 2 #4dd0e1 card 3 #006064  -->
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/imgDeputadoFresco"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:roundAsCircle="true"
+                        fresco:actualImageScaleType="2:3"
+                        fresco:backgroundImage="@color/blue"
+                        fresco:fadeDuration="300"
+                        fresco:failureImage="@drawable/error"
+                        fresco:failureImageScaleType="2:3"
+                        fresco:overlayImage="@drawable/watermark"
+                        fresco:placeholderImage="@color/wait_color"
+                        fresco:placeholderImageScaleType="2:3"
+                        fresco:pressedStateOverlayImage="@color/red"
+                        fresco:progressBarAutoRotateInterval="1000"
+                        fresco:progressBarImage="@drawable/progress_bar"
+                        fresco:progressBarImageScaleType="centerInside"
+                        fresco:retryImage="@drawable/retrying"
+                        fresco:retryImageScaleType="2:3"
+                        fresco:roundBottomLeft="false"
+                        fresco:roundBottomRight="true"
+                        fresco:roundTopLeft="true"
+                        fresco:roundTopRight="false"
+                        fresco:roundWithOverlayColor="@color/corner_color"
+                        fresco:roundingBorderColor="@color/border_color"
+                        fresco:roundingBorderWidth="2dp" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@color/cardTransparente"
+                        android:gravity="bottom"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/partidoDeputado"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/rubik_light"
+                        android:text="Sigla Partido"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="8sp"
+                        android:textStyle="normal|bold"
+                        android:theme="@style/Base.DialogWindowTitle.AppCompat"
+                        android:typeface="normal"
+                        app:layout_constraintBottom_toBottomOf="@+id/view2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/view2" />
+
+                    <TextView
+                        android:id="@+id/nomeDeputado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/rubik_light"
+                        android:text="Nome Deputado"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:typeface="normal"
+                        app:layout_constraintBottom_toTopOf="@+id/partidoDeputado"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/view2" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/cardTransparente"
+                app:cardCornerRadius="8dp">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/idLegislatura"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Id Legislatura"
+                        android:textColor="@color/colorPrimaryText"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/dtInicio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Data Inicio"
+                        android:textColor="@color/colorPrimaryText"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/idLegislatura" />
+
+                    <TextView
+                        android:id="@+id/dtFim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Data Fim"
+                        android:textColor="@color/colorPrimaryText"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/dtInicio" />
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/cardTransparente"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/transporte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:text="@string/transporte"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/alimentacao"
+                        android:autoSizeTextType="uniform"
+                        android:layout_margin="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:text="@string/alimentacao"
+                        android:textColor="@color/colorPrimaryText" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/manutencao"
+                        android:autoSizeTextType="uniform"
+                        android:layout_margin="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:text="@string/manutencao"
+                        android:textColor="@color/colorPrimaryText" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/assinatura"
+                        android:autoSizeTextType="uniform"
+                        android:layout_margin="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:text="@string/assinatura"
+                        android:textColor="@color/colorPrimaryText" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/apoio"
+                        android:autoSizeTextType="uniform"
+                        android:layout_margin="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:text="@string/apoio"
+                        android:textColor="@color/colorPrimaryText" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/telefonia"
+                        android:autoSizeTextType="uniform"
+                        android:layout_margin="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:text="@string/telefonia"
+                        android:textColor="@color/colorPrimaryText" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/postal"
+                        android:autoSizeTextType="uniform"
+                        android:layout_margin="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:text="@string/postal"
+                        android:textColor="@color/colorPrimaryText" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/hospedagem"
+                        android:autoSizeTextType="uniform"
+                        android:layout_margin="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:text="@string/hospedagem"
+                        android:textColor="@color/colorPrimaryText" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/seguranca"
+                        android:autoSizeTextType="uniform"
+                        android:layout_margin="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:text="@string/seguranca"
+                        android:textColor="@color/colorPrimaryText" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cursos"
+                        android:autoSizeTextType="uniform"
+                        android:layout_margin="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:text="@string/cursos"
+                        android:textColor="@color/colorPrimaryText" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/moradia"
+                        android:autoSizeTextType="uniform"
+                        android:layout_margin="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:text="@string/moradia"
+                        android:textColor="@color/colorPrimaryText" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/cardTransparente"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:text="@string/total"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sm"
+                        android:autoSizeTextType="uniform"
+                        android:layout_margin="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:text="@string/sm"
+                        android:textColor="@color/colorPrimaryText" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bf"
+                        android:autoSizeTextType="uniform"
+                        android:layout_margin="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:text="@string/bf"
+                        android:textColor="@color/colorPrimaryText" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/gas"
+                        android:autoSizeTextType="uniform"
+                        android:layout_margin="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:text="@string/gas"
+                        android:textColor="@color/colorPrimaryText" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

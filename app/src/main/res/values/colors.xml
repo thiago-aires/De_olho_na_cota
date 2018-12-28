@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#03a9f4</color>
+    <color name="colorPrimaryText">#e2f6ff</color>
+    <color name="backupcolorPrimaryText">#212121</color>
+    <color name="cardDetalhesDeputado">#e2f6ff</color>
+    <color name="cardTransparente">#37000000</color>
+    <color name="backupcardTransparente">#7Fe2f6ff</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="cardview_shadow_start_color">#37000000</color>
+</resources>
